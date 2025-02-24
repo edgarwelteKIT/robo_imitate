@@ -59,6 +59,12 @@ You can download pretrain model and aditional files from this [link](https://dri
 
 - Run Isaac-Sim or Lite 6 robot arm
 
+	For Isaac-Sim it the easiest way to run it is to use `isaac-sim.selector.sh` script and selecting the correct ros2 installation (e.g. internal). You can run it with:
+	```sh
+	~/isaacsim/isaac-sim.selector.sh
+	```
+	Open the file `xarm_bringup/issac/object_picking.usda` and run simulation.
+
 Inside docker container run:
 - Run ROS 2 controler
 ```sh
