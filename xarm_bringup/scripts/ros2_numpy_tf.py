@@ -4,6 +4,7 @@ import numpy as np
 
 
 def ros2numpy(pose):
+    """ Convert ROS pose to numpy transform matrix (4x4)"""
     xyz = None
     q = None
 
@@ -33,6 +34,7 @@ def ros2numpy(pose):
 
 
 def numpy2ros(transform, ros_type, frame_id="", stamp=None):
+    """ Convert numpy transform matrix (4x4) to ROS type """
     xyz = transform[:3, 3]
     q = t3d.quaternions.mat2quat(transform[:3, :3])
 
